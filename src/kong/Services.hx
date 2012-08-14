@@ -19,7 +19,12 @@ typedef Services = {
     /** Tests of the player is a guest. A guest is an anonymous player who is not logged in to Kongregate. */
     function isGuest():Bool;
 
-    function addEventListener(type:String, listener:Dynamic->Void):Void;
+    #if flash9
+    /** Adds an event listener that will be called when Kongregate dispatches an event of the specified type.
+     *
+     * [type] should be one of the constants defined by [EventType]. */
+    function addEventListener(type:String, listener:flash.events.Event->Void):Void;
+    #end
 
     /** Retrieves the unique user ID of the current player. Returns "0" if the player is not logged in. */
     function getUserId():String;
