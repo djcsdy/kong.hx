@@ -20,7 +20,7 @@ class Kongregate {
         flash.system.Security.allowDomain(apiPath);
         var request = new flash.net.URLRequest(apiPath);
         var loader = new flash.display.Loader();
-        loader.contentLoaderInfo.addEventListener(Event.COMPLETE, function(event:flash.events.Event) {
+        loader.contentLoaderInfo.addEventListener(flash.events.Event.COMPLETE, function(event:flash.events.Event) {
             var api = event.target.content;
             onLoad(cast api);
         });
