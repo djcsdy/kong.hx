@@ -12,8 +12,9 @@ Kongregate API in the background, and call your callback function when it is
 ready.
 
 Before using the Kongregate API object, you should call
-`api.services.connect()` to connect to the Kongregate back-end. It is good
-practise to call this function as soon as possible.
+`api.services.connect()` to connect to the Kongregate back-end (where `api` is
+an instance of the Kongregate API). It is good practise to call this function
+as soon as possible after obtaining a Kongregate API object.
 
 The Kongregate API object matches the typedef `KongregateApi`, which exposes
 the majority of the Kongregate API with strong typing.
