@@ -19,7 +19,7 @@ typedef Services = {
     /** Tests of the player is a guest. A guest is an anonymous player who is not logged in to Kongregate. */
     function isGuest():Bool;
 
-    function addEventListener(type:String, listener:Dynamic->Void);
+    function addEventListener(type:String, listener:Dynamic->Void):Void;
 
     /** Retrieves the unique user ID of the current player. Returns "0" if the player is not logged in. */
     function getUserId():String;
