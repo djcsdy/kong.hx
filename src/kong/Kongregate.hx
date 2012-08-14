@@ -11,12 +11,12 @@ class Kongregate {
      * After retrieving the Kongregate API object you should call [api.services.connect()] to
      * connect to Kongregate. */
     #if flash8
-    public static function getApi(onLoad:KongregateApi->Void) {
+    public static function loadApi(onLoad:KongregateApi->Void) {
         var api = flash.Lib._global.kongregate;
         onLoad(cast api);
     }
     #elseif flash
-    public static function getApi(onLoad:KongregateApi->Void) {
+    public static function loadApi(onLoad:KongregateApi->Void) {
         var parameters = flash.Lib.current.root.loaderInfo.parameters;
         var apiPath = parameters.kongregate_api_path;
         if (apiPath == null) {
