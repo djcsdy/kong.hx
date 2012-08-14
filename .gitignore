@@ -1,0 +1,6 @@
+bin
+*.hxproj
+*.iml
+.idea
+out
+*.build
