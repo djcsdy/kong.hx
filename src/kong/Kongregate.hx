@@ -1,10 +1,5 @@
 package kong;
 
-import flash.events.Event;
-import flash.display.Loader;
-import flash.net.URLRequest;
-import flash.system.Security;
-
 class Kongregate {
     /** Retrieves the Kongregate API object, and calls [onLoad(api)] when complete.
      *
@@ -22,10 +17,10 @@ class Kongregate {
         if (apiPath == null) {
             apiPath = "http://www.kongregate.com/flash/API_AS3_Local.swf";
         }
-        Security.allowDomain(apiPath);
-        var request = new URLRequest(apiPath);
-        var loader = new Loader();
-        loader.contentLoaderInfo.addEventListener(Event.COMPLETE, function(event:Event) {
+        flash.system.Security.allowDomain(apiPath);
+        var request = new flash.net.URLRequest(apiPath);
+        var loader = new flash.display.Loader();
+        loader.contentLoaderInfo.addEventListener(Event.COMPLETE, function(event:flash.events.Event) {
             var api = event.target.content;
             onLoad(cast api);
         });
