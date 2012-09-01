@@ -4,5 +4,5 @@
   <tag v="game"/>
   <tag v="kongregate"/>
   <description>Strongly-typed access to the Kongregate API from Haxe.</description>
-  <version name="1.0">Initial release</version>
+  <version name="1.1">Distribute documentation.</version>
 </project>
