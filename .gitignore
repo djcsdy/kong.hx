@@ -4,3 +4,4 @@ bin
 .idea
 out
 *.build
+/haxedoc.xml
