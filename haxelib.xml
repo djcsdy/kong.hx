@@ -1,8 +1,0 @@
-<project name="kong.hx" url="https://github.com/djcsdy/kong.hx" license="MIT">
-  <user name="djc"/>
-  <tag v="flash"/>
-  <tag v="game"/>
-  <tag v="kongregate"/>
-  <description>Strongly-typed access to the Kongregate API from Haxe.</description>
-  <version name="1.1">Distribute documentation.</version>
-</project>
