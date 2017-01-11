@@ -6,10 +6,15 @@ Strongly-typed access to the Kongregate API from Haxe.
 ## Getting Started
 
 To get an instance of the Kongregate API object, call the static function
-`Kongregate.loadApi(onLoad)`, passing a callback function that will accept an
-instance of the Kongregate API as its argument. kong.hx will load the
-Kongregate API in the background, and call your callback function when it is
-ready.
+`Kongregate.loadApi(onLoad)`. kong.hx will load the Kongregate API in the
+background, and call `onLoad` when it is ready. For example:
+
+```haxe
+Kongregate.loadApi(function(api:KongregateApi) {
+    // Your code here.
+    // 'api' is an instance of the Kongregate API object.
+});
+```
 
 Before using the Kongregate API object, you should call
 `api.services.connect()` to connect to the Kongregate back-end (where `api` is
