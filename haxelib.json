@@ -5,7 +5,7 @@
   "description": "Strongly-typed access to the Kongregate API from Haxe.",
   "contributors": ["djc"],
   "releasenote": "Update for Haxe 3.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "url": "https://github.com/djcsdy/kong.hx",
   "dependencies": {
   }
