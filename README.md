@@ -14,7 +14,21 @@ ready.
 Before using the Kongregate API object, you should call
 `api.services.connect()` to connect to the Kongregate back-end (where `api` is
 an instance of the Kongregate API). It is good practise to call this function
-as soon as possible after obtaining a Kongregate API object.
+as soon as possible after obtaining a Kongregate API object. For example:
+
+``` haxe
+var kongregate:KongregateApi;
+	
+function initapi() {
+  Kongregate.loadApi(function(api:Dynamic) {			
+    // Save Kongregate API reference
+    kongregate = api;
+
+    // Connect to the back-end
+    kongregate.services.connect();
+  });
+}
+```
 
 The Kongregate API object matches the typedef `KongregateApi`, which exposes
 the majority of the Kongregate API with strong typing.
