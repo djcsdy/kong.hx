@@ -16,17 +16,17 @@ Before using the Kongregate API object, you should call
 an instance of the Kongregate API). It is good practise to call this function
 as soon as possible after obtaining a Kongregate API object. For example:
 
-``` haxe
+```haxe
 var kongregate:KongregateApi;
-	
-function initapi() {
-  Kongregate.loadApi(function(api:Dynamic) {			
-    // Save Kongregate API reference
-    kongregate = api;
 
-    // Connect to the back-end
-    kongregate.services.connect();
-  });
+function initApi() {
+    Kongregate.loadApi(function(api:KongregateApi) {
+        // Save Kongregate API reference.
+        kongregate = api;
+
+        // Connect to the back-end.
+        kongregate.services.connect();
+    });
 }
 ```
 
