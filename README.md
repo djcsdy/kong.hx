@@ -90,6 +90,13 @@ kong.hx does not currently support:
 It should be straightforward to add support for these features.
 
 
+## Authors
+
+Written by Daniel J. Cassidy.
+
+Thanks to Terry Cavanagh for his improvements to the documentation.
+
+
 ## License
 
 Copyright © 2012–2017 Daniel J. Cassidy.
