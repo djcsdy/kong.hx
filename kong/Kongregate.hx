@@ -28,7 +28,7 @@ class Kongregate {
             var request = new flash.net.URLRequest(apiPath);
             var loader = new flash.display.Loader();
             loader.contentLoaderInfo.addEventListener(flash.events.Event.COMPLETE, function(event:flash.events.Event) {
-                api = cast event.target.content;
+                api = cast (event.target : Dynamic).content;
                 onLoad(api);
             });
             loader.load(request);
