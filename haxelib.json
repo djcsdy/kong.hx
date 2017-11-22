@@ -4,8 +4,8 @@
   "tags": ["flash","game","kongregate"],
   "description": "Strongly-typed access to the Kongregate API from Haxe.",
   "contributors": ["djc"],
-  "releasenote": "Update for Haxe 3.4/OpenFL 6.5.",
-  "version": "1.2.2",
+  "releasenote": "Remove extraneous files.",
+  "version": "1.2.3",
   "url": "https://github.com/djcsdy/kong.hx",
   "dependencies": {
   }
