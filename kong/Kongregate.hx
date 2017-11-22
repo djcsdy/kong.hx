@@ -21,7 +21,8 @@ class Kongregate {
             var parameters = flash.Lib.current.root.loaderInfo.parameters;
             var apiPath = parameters.kongregate_api_path;
             if (apiPath == null) {
-                apiPath = "http://www.kongregate.com/flash/API_AS3_Local.swf";
+                var scheme = if (~/^https:/.match(flash.Lib.current.root.loaderInfo.loaderURL)) "https" else "http";
+                apiPath = scheme + "://www.kongregate.com/flash/API_AS3_Local.swf";
             }
             flash.system.Security.allowDomain(apiPath);
             var request = new flash.net.URLRequest(apiPath);
