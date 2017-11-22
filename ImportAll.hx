@@ -33,11 +33,10 @@ class ImportAll {
                     moduleName = packageName + "." + moduleName;
                 }
 
-                for (whitelistItem in whitelist) {
-                    if (StringTools.startsWith(moduleName, whitelistItem + ".")) {
-                        Context.getModule(moduleName);
-                        break;
-                    }
+                if (Lambda.exists(whitelist, function(whitelistItem) {
+                    return StringTools.startsWith(moduleName, whitelistItem + ".");
+                })) {
+                    Context.getModule(moduleName);
                 }
             }
         }
